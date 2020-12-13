@@ -17,7 +17,18 @@ const App = () => (
             </div>
         </div>
         <div className="ed-grid m-grid-3">
-            <Curso />
+            <Curso
+                title= "React desde cero"
+                image= "https://edteam-media.s3.amazonaws.com/courses/big/f7dad9a6-e060-4305-9adf-b9a9079075de.jpg"
+                price= "30USD"
+                professor= "Beto Quiroga"
+            />
+            <Curso
+                title= "HMTL desde cero"
+                image= "https://edteam-media.s3.amazonaws.com/courses/big/26557907-0555-427e-a40c-6ff207f98d72.png"
+                price= "28USD"
+                professor= "Álvaro Felipe"
+            />
         </div>
     </>
 
