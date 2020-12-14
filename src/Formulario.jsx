@@ -12,7 +12,6 @@ class Formulario extends Component {
 
     }
 
-    // this.setState({})
 
     render() {
         return (
@@ -22,11 +21,13 @@ class Formulario extends Component {
                     <div className="ed-grid m-grid-2">
                         <div className="form__item">
                             <label>Nombre Completo</label>
-                            <input type="text"/>
+                            <input type="text" 
+                                onChange={ e => this.setState({nombre: e.target.value})}/>
                         </div>
                         <div className="form__item">
                             <label>Correo Electrónico</label>
-                            <input type="email"/>
+                            <input type="email"
+                                onChange={ e => this.setState({correo: e.target.value})}/>
                         </div>
                     </div>
                 </form>
