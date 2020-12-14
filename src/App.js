@@ -7,7 +7,7 @@ import Formulario from './Formulario'
 const App = () => (
     <>
         <Banner />
-        <Formulario />
+        <Formulario name="EDTeam" />
     </>
 
 

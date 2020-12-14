@@ -30,10 +30,10 @@ class Formulario extends Component {
 
 
     render() {
-        return (
+         return (
             <div className="ed-grid">
-                <h1>Formulario</h1>
-                <form>
+                <h1>Formulario {this.props.name}</h1>
+                <form id="elemento">
                     <div className="ed-grid m-grid-2">
                         <div className="form__item">
                             <label>Nombre Completo</label>
@@ -53,6 +53,12 @@ class Formulario extends Component {
                 </div>
             </div>
         )
+    }
+
+    componentDidMount(){
+        let elemento = document.getElementById("elemento")
+        console.log(elemento)
+
     }
 
 }
