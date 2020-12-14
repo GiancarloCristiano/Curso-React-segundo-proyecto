@@ -10,6 +10,22 @@ class Formulario extends Component {
             correo: ""
         }
 
+
+        this.cambiarNombre = this.cambiarNombre.bind(this)
+        this.cambiarCorreo = this.cambiarCorreo.bind(this)
+    }
+
+
+    cambiarNombre(e) {
+        this.setState({
+            nombre: e.target.value
+        })
+    }
+
+    cambiarCorreo(e) {
+        this.setState({
+            correo: e.target.value
+        })
     }
 
 
@@ -22,12 +38,12 @@ class Formulario extends Component {
                         <div className="form__item">
                             <label>Nombre Completo</label>
                             <input type="text" 
-                                onChange={ e => this.setState({nombre: e.target.value})}/>
+                                onChange={this.cambiarNombre}/>
                         </div>
                         <div className="form__item">
                             <label>Correo Electrónico</label>
                             <input type="email"
-                                onChange={ e => this.setState({correo: e.target.value})}/>
+                                onChange={this.cambiarCorreo}/>
                         </div>
                     </div>
                 </form>
