@@ -17,7 +17,6 @@ class Formulario extends Component {
         this.cambiarFecha = this.cambiarFecha.bind(this)
     }
 
-
     cambiarNombre(e) {
         this.setState({
             nombre: e.target.value
