@@ -64,10 +64,11 @@ class Formulario extends Component {
     }
 
     componentDidMount(){
-        let elemento = document.getElementById("elemento")
+        //let elemento = document.getElementById("elemento")
         this.intervaloFecha = setInterval(() =>
         { this.cambiarFecha()
-            console.log(new Date())}
+            //console.log(new Date()
+            }
          , 1000)
     }
 
